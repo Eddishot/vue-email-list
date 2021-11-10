@@ -26,7 +26,8 @@ new Vue({
 
         functionApi(){
 
-            for (let i = 0; i <10; index++) {
+            for (let i = 0; i <10; i++) {
+                this.listEmails = [];
 
                 axios.get(this.booleanApiurl).then((ajaxResponse) => {
                  const serverAnswer = ajaxResponse.data;
